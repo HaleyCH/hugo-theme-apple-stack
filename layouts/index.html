@@ -1,5 +1,5 @@
 {{ define "main" }}
-    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.indexSections }}
     {{ $notHidden := where $pages "Params.hidden" "!=" true }}
     {{ $filtered := ($pages | intersect $notHidden) }}
 
