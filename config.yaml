@@ -6,6 +6,10 @@ module:
 params:
     mainSections:
         - post
+    gossipSections:
+        - gossip
+    postgraduateSections:
+        - postgraduate
     featuredImageField: image
     rssFullContent: true
     favicon:

@@ -1,16 +1,32 @@
 {{ define "main" }}
     {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
+    {{ $notHidden := where $pages "Params.hidden" "!=" true }}
     {{ $filtered := ($pages | intersect $notHidden) }}
-    {{ $pag := .Paginate ($filtered) }}
 
+    {{/* Separate pinned and unpinned pages */}}
+    {{ $pinned := where $filtered "Params.pinned" true }}
+    {{ $unpinned := where $filtered "Params.pinned" "!=" true }}
+
+    {{/* Pinned Articles Section */}}
+    {{ if $pinned }}
+    <section class="pinned-articles article-list">
+        <h1 class="section-title">置顶文章</h1>
+        {{ range $pinned }}
+            {{ partial "article-list/default" . }}
+        {{ end }}
+    </section>
+    {{ end }}
+
+    {{/* Regular Articles Section */}}
+    {{ $pag := .Paginate ($unpinned) }}
     <section class="article-list">
+        <h1 class="section-title">最新文章</h1>
         {{ range $index, $element := $pag.Pages }}
             {{ partial "article-list/default" . }}
         {{ end }}
     </section>
-
     {{- partial "pagination.html" . -}}
+
     {{- partial "footer/footer" . -}}
 {{ end }}
 
