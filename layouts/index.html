@@ -18,10 +18,10 @@
     {{ end }}
 
     {{/* Regular Articles Section */}}
-    {{ $pag := .Paginate ($unpinned) }}
+    <!-- {{ $pag := .Paginate ($unpinned) }} -->
     <section class="article-list">
         <h1 class="section-title">最新文章</h1>
-        {{ range $index, $element := $pag.Pages }}
+        {{ range $unpinned }}
             {{ partial "article-list/default" . }}
         {{ end }}
     </section>
