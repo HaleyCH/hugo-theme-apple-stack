@@ -1,6 +1,6 @@
 baseurl: https://example.com/
 languageCode: en-us
-theme: hugo-theme-stack
+theme: hugo-theme-apple-stack
 title: Example Site
 copyright: Example Person
 

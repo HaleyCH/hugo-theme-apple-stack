@@ -48,9 +48,9 @@ video {
 
 @import 'accordion';
 @import 'button';
-@import 'notice';
-@import 'modal';
-@import 'tab';
+// @import 'notice';
+// @import 'modal';
+// @import 'tab';
 
 .article-content p:has(> img:nth-child(2)){column-count:2;column-gap:8px;margin:6px 0;}
 .article-content p:has(> img:nth-child(3)){column-count:3;}

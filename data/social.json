@@ -1,0 +1,24 @@
+{
+  "main": [
+    {
+      "name": "github",
+      "icon": "fab fa-github",
+      "link": "https://github.com/HaleyCH"
+    },
+    {
+      "name": "bilibili",
+      "icon": "fab fa-bilibili",
+      "link": "https://space.bilibili.com/107766275"
+    },
+    {
+      "name": "mail",
+      "icon": "fa-regular fa-envelope",
+      "link": "mailto:hluvmiku@gmail.com"
+    },
+    {
+      "name": "rss",
+      "icon": "fas fa-rss",
+      "link": "https://hluvmiku.tech/index.xml"
+    }
+  ]
+}
