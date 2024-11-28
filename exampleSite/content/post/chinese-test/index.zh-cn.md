@@ -1,4 +1,5 @@
 ---
+title_zh: Chinese Test
 title: Chinese Test
 description: 这是一个副标题
 date: 2020-09-09

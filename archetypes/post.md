@@ -1,7 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+title_zh: "{{ replace .Name "-" " " | title }}"
 subtitle: "{{ replace .Name "-" " " | title }}"
-meta_title: "{{ replace .Name "-" " " | title }} ｜ HaleyCH's Blog"
+meta_title: "{{ replace .Name "-" " " | title }}"
 description: ""
 date: {{ .Date }}
 image: ""

@@ -12,9 +12,14 @@
     <div class="article-title-wrapper">
         <h2 class="article-title">
             <a href="{{ .RelPermalink }}">
-                {{- .Title -}}
+                {{- with .Params.title_zh -}}
+                    {{ . }}
+                {{- else -}}
+                    {{ .Title }}
+                {{- end -}}
             </a>
         </h2>
+        
     
         {{ with .Params.description }}
         <h3 class="article-subtitle">

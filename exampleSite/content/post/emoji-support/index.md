@@ -1,6 +1,7 @@
 +++
 author = "Hugo Authors"
 title = "Emoji Support"
+title_zh = "emoji"
 date = "2019-03-05"
 description = "Guide to emoji usage in Hugo"
 categories = [

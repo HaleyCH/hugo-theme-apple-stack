@@ -1,5 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+title_zh: "{{ replace .Name "-" " " | title }}"
 subtitle: "{{ replace .Name "-" " " | title }}"
 meta_title: ""
 description: ""
