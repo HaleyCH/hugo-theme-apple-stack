@@ -17,6 +17,7 @@
     visibility: hidden !important;
 }
 
+
 video {
     width: 100%;
     height: 70vh;
@@ -28,9 +29,11 @@ video {
         width: 100%;
         height: auto;
     }
-    #quote {
-        display: none;
-    }
+    .hidden-mobile{
+        display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }    
 }
 
 .accordion  {
