@@ -27,10 +27,10 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
     &[data-scheme="dark"] {
         --body-background: #171717;
-        --accent-color: #7a0202;
-        --accent-color-darker: #9e0202;
+        --accent-color: #9e0202;
+        --accent-color-darker: #7a0202;
         --accent-color-text: #000;
-        --body-text-color: #fafafa;
+        --body-text-color: #fff;
         --scrollbar-thumb: hsl(0, 0%, 40%);
         --scrollbar-track: var(--body-background);
     }
