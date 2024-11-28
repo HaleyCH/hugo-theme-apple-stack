@@ -1,1 +1,61 @@
-/* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+/* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */// Add your own custom styles here
+.content :is(:where(code):not(:where([class~="not-prose"] *))){
+    color: inherit !important;
+}
+
+// pre{
+//     background-color: gray !important;
+// }
+
+.content{
+    color: inherit !important;
+}
+
+.hidden-safari {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+video {
+    width: 100%;
+    height: 70vh;
+}
+
+/* 当屏幕宽度小于或等于600px（通常为手机）时 */
+@media (max-width: 600px) {
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.accordion  {
+    overflow: hidden;
+}
+
+.active .accordion-content  {
+    max-height:90vh;
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 1000px) {
+    /* Styles for mobile devices */
+    .hidden-mobile {
+        display: none;
+    }
+}
+
+@import 'accordion';
+@import 'button';
+@import 'notice';
+@import 'modal';
+@import 'tab';
+
+.article-content p:has(> img:nth-child(2)){column-count:2;column-gap:8px;margin:6px 0;}
+.article-content p:has(> img:nth-child(3)){column-count:3;}
+.article-content p:has(> img:nth-child(4)){column-count:4;}
+.article-content p:has(> img:nth-child(5)){column-count:5;}
+.article-content p:has(> img:nth-child(6)){column-count:4;}
+.article-content p:has(> img:nth-child(2)) img{display:inherit;}
+.article-content p:has(> img:nth-child(6)) img{margin-bottom:8px;}
