@@ -19,7 +19,7 @@ your content
     {{ if eq .Site.Params.hugoEncryptorLanguage "en-us" }}
       <p>Part of this article is encrypted with password:</p>
     {{ else }}
-      <p>文章的部分内容被密码保护：</p>
+      <p>文章的部分内容被密码保护{{ if .Get 1 }}，提示 “{{ .Get 1 }}”{{ end }}：</p>
     {{ end }}
   </div>
   <div class="hugo-encryptor-form">
